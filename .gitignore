@@ -1,0 +1,49 @@
+# --------------------------------
+# top level directory filter
+
+# Ignore Objectives:
+# 1. exclude some toplevel directories
+# 2. exclude all types except some type for normal file
+# 3. other excludes may implemented in ./*/.gitignore
+
+# /*
+# ignore all data
+**/*data*
+# incldue all data directories
+!**/*data*/
+# !/data
+!/supervised_sentiment
+!*.py
+
+# -------------------------------------
+# MUST EXCLUDE without exception
+## subdiectories
+# /thrift
+
+## data types
+*.txt
+*.csv
+*.pyc
+*.pkl
+*.npz
+*.npy
+*.hdf5
+*temp*
+*tmp*
+# /*/*/**/*data*
+
+## compression filter
+*.7z
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+/**/ltp
+
+## log filter
+*nohup*
+*.out
+*log*
