@@ -33,6 +33,8 @@
 # /*/*/**/*data*
 
 ## compression filter
+*.xml*
+*bz2*
 *.7z
 *.gz
 *.iso
